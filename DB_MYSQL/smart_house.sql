@@ -1,0 +1,10 @@
+USE smart_home;
+
+CREATE TABLE sensor_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    accelX FLOAT NOT NULL,
+    accelY FLOAT NOT NULL,
+    accelZ FLOAT NOT NULL,
+    isFlat BOOLEAN NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
